@@ -25,3 +25,12 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    googleGmsVersion='15.0.0'
+    googleGmsVersionFireBase='15.0.2'
+    androidSupportVersion='27.1.1'
+    retrofitVersion='2.3.0'
+    roomVersion='1.0.0'
+    glide='4.7.1'
+}
