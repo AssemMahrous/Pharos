@@ -28,6 +28,10 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glide"
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.google.android.gms:play-services-maps:$rootProject.googleGmsVersion"
+    implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
+    implementation "com.google.android.gms:play-services-places:$rootProject.googleGmsVersion"
+    annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
     implementation 'com.google.code.gson:gson:2.8.2'
     testImplementation 'junit:junit:4.12'
