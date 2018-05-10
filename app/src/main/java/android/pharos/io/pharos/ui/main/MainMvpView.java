@@ -10,11 +10,13 @@ public interface MainMvpView extends MvpView {
 
     void addCities(List<City> cities);
 
-    void goToMap();
+    void goToMap(String lat,String lng,String name);
 
     void incrementPage();
 
     void endPagination();
 
     void getCities();
+
+
 }
