@@ -6,6 +6,8 @@ import android.pharos.io.pharos.data.db.CityEntry;
 import android.pharos.io.pharos.data.network.PharosApi;
 import android.pharos.io.pharos.data.network.models.City;
 
+import java.util.List;
+
 public class AppDataManager {
 
     private final CityDao cityDao;
@@ -38,8 +40,8 @@ public class AppDataManager {
 
         @Override
         protected final Void doInBackground(City[] lists) {
-            CityEntry weatherEntry = new CityEntry(lists[0]);
-            mCityDoa.bulkInsert(weatherEntry);
+            CityEntry cityEntry = new CityEntry(lists[0]);
+            mCityDoa.bulkInsert(cityEntry);
             return null;
         }
     }
